@@ -40,7 +40,6 @@ class Colores {
 }
 
 
-
 class  ColeccionDePaises{
     
     let  paises = ["Alemania","Bélgica","Colombia","Dinamarca","España","Finlandia","Grecia","Honduras","India","Jaimaica","Kenia","Libia","México","Nicaragua","Panamá","Rumania","Rusia","Singapur","Suiza","Túnez"]
