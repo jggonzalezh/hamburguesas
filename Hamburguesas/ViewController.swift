@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var lbl_pais: UILabel!
+    @IBOutlet weak var lbl_hamburguesa: UILabel!
+    
+    
+    let colores =  Colores()
+    let paises = ColeccionDePaises()
+    let hamburguesas = ColeccionDeHamburguesas()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +30,14 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func damePaisHamburguesa() {
+        lbl_pais.text = paises.obtenPais()
+        lbl_hamburguesa.text = hamburguesas.obtenHamburguesa()
+        let colorAleatorio = colores.regresaColorAleatorio()
+        view.backgroundColor = colorAleatorio
+        view.tintColor = colorAleatorio
+
+        
+    }
 }
 
